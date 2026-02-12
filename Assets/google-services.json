@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "893300902554",
+    "project_id": "brainrot-rush-sand-escape",
+    "storage_bucket": "brainrot-rush-sand-escape.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:893300902554:android:c37d1e60faf7dd4c3ced23",
+        "android_client_info": {
+          "package_name": "com.gvs.brainrot.rush.sand.escape"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAU4LgYPu6DLA3r_yDxATn1paMQaUlxSfs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

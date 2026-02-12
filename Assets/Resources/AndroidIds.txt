@@ -1,0 +1,54 @@
+
+LowBanner			X:X	
+BannerID			X:X	
+CollapsibleBannerID	X:X	
+AppOpenID			X:X	
+LowAppOpenID		X:X	
+LowInterstitialID	X:X	
+InterstitialID		X:X	
+RewardedID			X:X	
+RewardedInterstitial	X:X	
+NativeBanner		X:X	
+LowNativeBanner		X:X	
+AdmobAppID			X:X	
+
+
+
+-----------------------------------------------------------------------------------------
+
+AppLovinSDKKey			X:X		
+
+AppLovinBannerID		X:X	
+AppLovinHighAppOpenID	X:X	
+AppLovinLowAppOpenID	X:X	
+AppLovinInterstitialID	X:X	
+AppLovinRewardedID		X:X	
+AppLovinNativeBannerID	X:X	
+
+
+
+-----------------------------------------------------------------------------------------
+
+LevelPlayKey				X:X		
+
+LevelPlayBannerID			X:X		
+LevelPlayInterstitialID		X:X		
+LevelPlayRewardedID			X:X		
+
+
+-----------------------------------------------------------------------------------------
+
+
+AppName	X:X								Brainrot Rush: Sand Escape
+
+PackageName	X:X							com.gvs.brainrot.rush.sand.escape
+
+Version		X:X							1.0.1
+
+BundleCode		X:X						1
+
+KeystoreName		X:X					gvsnew.keystore
+
+KeystorePassword	X:X					gvs123
+
+JsonLink		X:X					

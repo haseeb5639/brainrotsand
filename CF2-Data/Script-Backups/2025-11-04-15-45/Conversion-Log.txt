@@ -1,0 +1,86 @@
+Converting script [1 / 5]	[\SUPER Character Controller\SUPER Character Controller\SUPERCharacterAIO.cs]
+	Fragments : 19
+		[ 0] : Line:  307	Other mod.	[Cursor.lockState]
+		[ 1] : Line:  308	Other mod.	[Cursor.visible]
+		[ 2] : Line:  456	InputMethod   GetAxis             	("Mouse Y")
+		[ 3] : Line:  457	InputMethod   GetAxis             	("Mouse X")
+		[ 4] : Line:  458	InputMethod   GetAxis             	("Mouse ScrollWheel")
+		[ 5] : Line:  459	InputMethod   GetKeyDown          	(perspectiveSwitchingKey_L)
+		[ 6] : Line:  460	InputMethod   GetKeyDown          	(interactKey_L)
+		[ 7] : Line:  463	InputMethod   GetKey              	(jumpKey_L)
+		[ 8] : Line:  464	InputMethod   GetKeyDown          	(jumpKey_L)
+		[ 9] : Line:  465	InputMethod   GetKey              	(crouchKey_L)
+		[10] : Line:  466	InputMethod   GetKeyDown          	(crouchKey_L)
+		[11] : Line:  467	InputMethod   GetKey              	(sprintKey_L)
+		[12] : Line:  468	InputMethod   GetKeyDown          	(sprintKey_L)
+		[13] : Line:  469	InputMethod   GetKey              	(slideKey_L)
+		[14] : Line:  470	InputMethod   GetKeyDown          	(slideKey_L)
+		[15] : Line:  473	InputMethod   GetKeyDown          	(VaultKey_L)
+		[16] : Line:  475	InputMethod   GetAxisRaw          	("Vertical")
+		[17] : Line:  475	InputMethod   GetAxisRaw          	("Horizontal")
+		[18] : Line:  651	InputMethod   GetAxis             	("Horizontal")
+
+Converting script [2 / 5]	[\TextMesh Pro\Examples & Extras\Scripts\CameraController.cs]
+	Fragments : 22
+		[ 0] : Line:   61	InputProperty simulateMouseWithTouches
+		[ 1] : Line:  131	InputMethod   GetAxis             	("Mouse ScrollWheel")
+		[ 2] : Line:  133	InputProperty touchCount          
+		[ 3] : Line:  135	InputMethod   GetKey              	(KeyCode.LeftShift)
+		[ 4] : Line:  135	InputMethod   GetKey              	(KeyCode.RightShift)
+		[ 5] : Line:  139	InputMethod   GetKeyDown          	(KeyCode.I)
+		[ 6] : Line:  142	InputMethod   GetKeyDown          	(KeyCode.F)
+		[ 7] : Line:  145	InputMethod   GetKeyDown          	(KeyCode.S)
+		[ 8] : Line:  150	InputMethod   GetMouseButton      	(1)
+		[ 9] : Line:  152	InputMethod   GetAxis             	("Mouse Y")
+		[10] : Line:  153	InputMethod   GetAxis             	("Mouse X")
+		[11] : Line:  173	InputMethod   GetTouch            	(0)
+		[12] : Line:  175	InputMethod   GetTouch            	(0)
+		[13] : Line:  199	InputMethod   GetMouseButton      	(0)
+		[14] : Line:  201	InputProperty mousePosition       
+		[15] : Line:  222	InputMethod   GetMouseButton      	(2)
+		[16] : Line:  245	InputMethod   GetAxis             	("Mouse Y")
+		[17] : Line:  246	InputMethod   GetAxis             	("Mouse X")
+		[18] : Line:  259	Other mod.	[Touch]
+		[19] : Line:  259	InputMethod   GetTouch            	(0)
+		[20] : Line:  260	Other mod.	[Touch]
+		[21] : Line:  260	InputMethod   GetTouch            	(1)
+
+Converting script [3 / 5]	[\TextMesh Pro\Examples & Extras\Scripts\TMP_TextEventHandler.cs]
+	Fragments : 5
+		[ 0] : Line:  125	InputProperty mousePosition       
+		[ 1] : Line:  128	InputProperty mousePosition       
+		[ 2] : Line:  146	InputProperty mousePosition       
+		[ 3] : Line:  162	InputProperty mousePosition       
+		[ 4] : Line:  185	InputProperty mousePosition       
+
+Converting script [4 / 5]	[\TextMesh Pro\Examples & Extras\Scripts\TMP_TextSelector_A.cs]
+	Fragments : 7
+		[ 0] : Line:   34	InputProperty mousePosition       
+		[ 1] : Line:   42	InputProperty mousePosition       
+		[ 2] : Line:   43	InputMethod   GetKey              	(KeyCode.LeftShift)
+		[ 3] : Line:   43	InputMethod   GetKey              	(KeyCode.RightShift)
+		[ 4] : Line:   69	InputProperty mousePosition       
+		[ 5] : Line:   90	InputProperty mousePosition       
+		[ 6] : Line:  111	InputProperty mousePosition       
+
+Converting script [5 / 5]	[\TextMesh Pro\Examples & Extras\Scripts\TMP_TextSelector_B.cs]
+	Fragments : 8
+		[ 0] : Line:   87	InputProperty mousePosition       
+		[ 1] : Line:   96	InputMethod   GetKey              	(KeyCode.LeftShift)
+		[ 2] : Line:   96	InputMethod   GetKey              	(KeyCode.RightShift)
+		[ 3] : Line:  169	InputProperty mousePosition       
+		[ 4] : Line:  206	InputMethod   GetKey              	(KeyCode.LeftShift)
+		[ 5] : Line:  206	InputMethod   GetKey              	(KeyCode.RightShift)
+		[ 6] : Line:  242	InputProperty mousePosition       
+		[ 7] : Line:  261	InputProperty mousePosition       
+
+
+5 scripts modified!
+Overwriting actual scripts...
+	[0 / 5] from  [C:/Controller/Navmesh/Navmesh/CF2-Data/Script-Backups/2025-11-04-15-45\Assets-After/\SUPER Character Controller\SUPER Character Controller\SUPERCharacterAIO.cs] to [C:/Controller/Navmesh/Navmesh/Assets/\SUPER Character Controller\SUPER Character Controller\SUPERCharacterAIO.cs]
+	[1 / 5] from  [C:/Controller/Navmesh/Navmesh/CF2-Data/Script-Backups/2025-11-04-15-45\Assets-After/\TextMesh Pro\Examples & Extras\Scripts\CameraController.cs] to [C:/Controller/Navmesh/Navmesh/Assets/\TextMesh Pro\Examples & Extras\Scripts\CameraController.cs]
+	[2 / 5] from  [C:/Controller/Navmesh/Navmesh/CF2-Data/Script-Backups/2025-11-04-15-45\Assets-After/\TextMesh Pro\Examples & Extras\Scripts\TMP_TextEventHandler.cs] to [C:/Controller/Navmesh/Navmesh/Assets/\TextMesh Pro\Examples & Extras\Scripts\TMP_TextEventHandler.cs]
+	[3 / 5] from  [C:/Controller/Navmesh/Navmesh/CF2-Data/Script-Backups/2025-11-04-15-45\Assets-After/\TextMesh Pro\Examples & Extras\Scripts\TMP_TextSelector_A.cs] to [C:/Controller/Navmesh/Navmesh/Assets/\TextMesh Pro\Examples & Extras\Scripts\TMP_TextSelector_A.cs]
+	[4 / 5] from  [C:/Controller/Navmesh/Navmesh/CF2-Data/Script-Backups/2025-11-04-15-45\Assets-After/\TextMesh Pro\Examples & Extras\Scripts\TMP_TextSelector_B.cs] to [C:/Controller/Navmesh/Navmesh/Assets/\TextMesh Pro\Examples & Extras\Scripts\TMP_TextSelector_B.cs]
+
+Overwriting COMPLETED!

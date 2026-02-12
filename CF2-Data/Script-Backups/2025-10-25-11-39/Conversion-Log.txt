@@ -1,0 +1,28 @@
+Converting script [1 / 1]	[\SUPER Character Controller\SUPER Character Controller\SUPERCharacterAIO.cs]
+	Fragments : 19
+		[ 0] : Line:  307	Other mod.	[Cursor.lockState]
+		[ 1] : Line:  308	Other mod.	[Cursor.visible]
+		[ 2] : Line:  456	InputMethod   GetAxis             	("Mouse Y")
+		[ 3] : Line:  457	InputMethod   GetAxis             	("Mouse X")
+		[ 4] : Line:  458	InputMethod   GetAxis             	("Mouse ScrollWheel")
+		[ 5] : Line:  459	InputMethod   GetKeyDown          	(perspectiveSwitchingKey_L)
+		[ 6] : Line:  460	InputMethod   GetKeyDown          	(interactKey_L)
+		[ 7] : Line:  463	InputMethod   GetKey              	(jumpKey_L)
+		[ 8] : Line:  464	InputMethod   GetKeyDown          	(jumpKey_L)
+		[ 9] : Line:  465	InputMethod   GetKey              	(crouchKey_L)
+		[10] : Line:  466	InputMethod   GetKeyDown          	(crouchKey_L)
+		[11] : Line:  467	InputMethod   GetKey              	(sprintKey_L)
+		[12] : Line:  468	InputMethod   GetKeyDown          	(sprintKey_L)
+		[13] : Line:  469	InputMethod   GetKey              	(slideKey_L)
+		[14] : Line:  470	InputMethod   GetKeyDown          	(slideKey_L)
+		[15] : Line:  473	InputMethod   GetKeyDown          	(VaultKey_L)
+		[16] : Line:  475	InputMethod   GetAxisRaw          	("Vertical")
+		[17] : Line:  475	InputMethod   GetAxisRaw          	("Horizontal")
+		[18] : Line:  651	InputMethod   GetAxis             	("Horizontal")
+
+
+1 scripts modified!
+Overwriting actual scripts...
+	[0 / 1] from  [C:/Controller/Navmesh/Navmesh/CF2-Data/Script-Backups/2025-10-25-11-39\Assets-After/\SUPER Character Controller\SUPER Character Controller\SUPERCharacterAIO.cs] to [C:/Controller/Navmesh/Navmesh/Assets/\SUPER Character Controller\SUPER Character Controller\SUPERCharacterAIO.cs]
+
+Overwriting COMPLETED!

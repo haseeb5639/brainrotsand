@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f95c5a947b0d914da7e735c87b2ff24, type: 3}
+  m_Name: AdsConfigAndroid
+  m_EditorClassIdentifier: 
+  LowBanner: 
+  BannerID: 
+  AppOpenID: 
+  LowAppOpenID: 
+  LowInterstitialID: 
+  InterstitialID: 
+  RewardedID: 
+  RewardedInterstitial: 
+  NativeBanner: 
+  LowNativeBanner: 
+  AdmobAppID: 
+  AppLovinBannerID: 
+  AppLovinHighAppOpenID: 
+  AppLovinLowAppOpenID: 
+  AppLovinInterstitialID: 
+  AppLovinRewardedID: 
+  AppLovinNativeBannerID: 
+  RussiaAppLovinBannerID: 
+  RussiaAppLovinHighAppOpenID: 
+  RussiaAppLovinLowAppOpenID: 
+  RussiaAppLovinInterstitialID: 
+  RussiaAppLovinRewardedID: 
+  RussiaAppLovinNativeBannerID: 
+  LevelPlayKey: 
+  AppName: 9 Fox Ads
+  PackageName: com.nfl.FoxAds
+  Version: 1.0
+  BundleCode: 1
+  KeystoreName: vghub.keystore
+  KeystorePassword: vghub123
+  JsonLink: https://www.dropbox.com/scl/fi/yi0v1yybtmwbofkwi0v0z/AdIds.json?rlkey=lb013006tk6hejqgxbk66hq1m&dl=1

@@ -1,0 +1,43 @@
+
+LowBanner		X:X					ca-app-pub-3940256099942544/6300978111
+BannerID		X:X					ca-app-pub-3940256099942544/6300978111
+CollapsibleBannerID		X:X			ca-app-pub-3940256099942544/6300978111
+AppOpenID		X:X					ca-app-pub-3940256099942544/9257395921
+InterstitialID	X:X					ca-app-pub-3940256099942544/1033173712
+RewardedID		X:X					ca-app-pub-3940256099942544/5224354917
+RewardedInterstitial X:X			ca-app-pub-3940256099942544/5354046379
+NativeBanner		X:X				ca-app-pub-3940256099942544/6300978111
+LowNativeBanner	X:X					ca-app-pub-3940256099942544/6300978111
+AdmobAppID		X:X					ca-app-pub-3940256099942544~3347511713
+
+-----------------------------------------------------------------------------------------
+
+AppLovinSDKKey				X:X			EHT4qVzQsP7HxwaQC8CSIBr3_CwP3vOxSkVm2VubtApdZhEEte4Nz3Ga49TQlwWT0DBBsTvCBr6wIcHhu86Ncn
+
+AppLovinBannerID			X:X			3731caa31998e88d
+AppLovinHighAppOpenID		X:X			bf53fcbd499489a2
+AppLovinLowAppOpenID		X:X			fb662b93bd787ced
+AppLovinInterstitialID		X:X			2c9f1ade620ea234
+AppLovinRewardedID 			X:X			439911181ebf6a1d
+AppLovinNativeBannerID		X:X			56f6db3e8203c958
+
+
+-----------------------------------------------------------------------------------------
+
+
+LevelPlayKey	X:X					85460dcd
+
+LevelPlayBannerID			X:X		thnfvcsog13bhn08
+LevelPlayInterstitialID		X:X		aeyqi3vqlv6o8sh9
+LevelPlayRewardedID			X:X		76yy3nay3ceui2a3
+
+
+-----------------------------------------------------------------------------------------
+
+
+AppName	X:X							Test Ads
+PackageName	X:X						com.ta.block.puzzle.jam.game
+Version		X:X						1.3
+BundleCode		X:X					1
+APPID			X:X					6470035668
+JsonLink X:X						
