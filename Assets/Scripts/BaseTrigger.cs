@@ -36,7 +36,7 @@ public class BaseTrigger : MonoBehaviour
     {
         if (!other.CompareTag("Player")) return;
 
-        Debug.LogError("isTrigger");
+        Debug.Log("isTrigger");
 
         // Player entered the base range
         if (myBase.isUnlocked)

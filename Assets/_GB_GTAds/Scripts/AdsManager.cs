@@ -324,6 +324,8 @@ public class AdsManager : MonoBehaviour
 
     public void ShowBanner()
     {
+        return;
+
         if (Disable)
             return;
 
@@ -407,6 +409,8 @@ public class AdsManager : MonoBehaviour
     }
     public void ShowNativeAd()
     {
+        return;
+
         if (Disable)
             return;
 

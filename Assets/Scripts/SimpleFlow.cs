@@ -23,11 +23,11 @@ public class ControllerFlow : MonoBehaviour
 
     private void Start()
     {
-        loadingPanel.SetActive(true);
-        characterPanel.SetActive(false);
-        levelSelectionPanel.SetActive(false);
+        //loadingPanel.SetActive(true);
+        //characterPanel.SetActive(false);
+        //levelSelectionPanel.SetActive(false);
 
-        StartLoading(ShowCharacterPanel);
+        //StartLoading(ShowCharacterPanel);
     }
 
     void StartLoading(System.Action onComplete)

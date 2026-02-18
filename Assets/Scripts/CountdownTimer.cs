@@ -47,7 +47,7 @@ public class CountdownTimer : MonoBehaviour
 
         /*timerText.text = "0";
         Debug.Log("Time left 0");*/
-        ShowAd();
+        //ShowAd();
         adsLoad.SetActive(false);
     }
 

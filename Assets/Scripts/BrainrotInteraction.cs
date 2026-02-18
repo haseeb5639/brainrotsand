@@ -1,13 +1,4 @@
-﻿
-
-
-
-
-
-
-
-
-//////// BAg
+﻿//////// BAg
 /////
 
 using UnityEngine;
@@ -54,6 +45,20 @@ public class BrainrotInteraction : MonoBehaviour
     private Quaternion originalRotation;
 
 
+    [Header("Sand Sink Settings")]
+    public bool enableSandSink = true;
+    public float sinkDelay = 2f;         // spawn ke baad kitni der baad sink start ho
+    public float sinkSpeed = 0.5f;       // kitni speed se niche jayega
+    public float maxSinkDepth = 2f;      // kitna niche ja sakta hai
+    public bool destroyOnFullSink = false;
+
+    private float sinkTimer;
+    private float sunkAmount;
+    private Vector3 startPosition;
+    private bool isSinking;
+
+
+
     //public UnityEvent onPick;
     void Awake()
     {
@@ -75,6 +80,9 @@ public class BrainrotInteraction : MonoBehaviour
 
         if (infoText) infoText.gameObject.SetActive(false);
         UpdateInfoUI();
+
+        startPosition = transform.position;
+        sinkTimer = sinkDelay;
     }
 
     void Update()
@@ -85,7 +93,53 @@ public class BrainrotInteraction : MonoBehaviour
             HandlePlayerProximity();
 
         HandleBillboardFacing();
+
+        HandleSandSink(); // 👈 ADD THIS
     }
+
+    void HandleSandSink()
+    {
+        if (!enableSandSink) return;
+        if (IsPlacedOnBase) return; // base pe ho to sink na kare
+        if (BrainrotManager.instance.IsHoldingBrainrot()) return;
+
+        sinkTimer -= Time.deltaTime;
+
+        if (sinkTimer <= 0f)
+        {
+            isSinking = true;
+        }
+
+        if (isSinking)
+        {
+            float moveAmount = sinkSpeed * Time.deltaTime;
+            transform.position -= new Vector3(0, moveAmount, 0);
+            sunkAmount += moveAmount;
+
+            if (sunkAmount >= maxSinkDepth)
+            {
+                if (destroyOnFullSink)
+                {
+                    Destroy(gameObject);
+                }
+                else
+                {
+                    ReturnToOrigin();
+                    ResetSand();
+                }
+            }
+        }
+    }
+
+    void ResetSand()
+    {
+        isSinking = false;
+        sunkAmount = 0f;
+        sinkTimer = sinkDelay;
+        transform.position = startPosition;
+    }
+
+
 
     void HandleEarning()
     {
@@ -219,11 +273,10 @@ public class BrainrotInteraction : MonoBehaviour
         BrainrotUIManager.instance.ShowDropPrompt();
         AudioManager.PlayPickSound();
 
+        isSinking = false;
+        sunkAmount = 0f;
 
         //onPick?.Invoke();
-
-
-
 
     }
 
