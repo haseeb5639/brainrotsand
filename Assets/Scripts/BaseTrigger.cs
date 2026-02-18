@@ -67,12 +67,12 @@ public class BaseTrigger : MonoBehaviour
                 BrainrotUIManager.instance.ShowMessage(
                     $"Press Hand Icon to Pick {myBase.brainrot.brainrotName}"
                 );
-                Debug.LogError("isHave BrainRoot in Base");
+                Debug.Log("isHave BrainRoot in Base");
             }
             else
             {
                 //BrainrotUIManager.instance.ShowMessage("Base Empty");
-                Debug.LogError("Base Empty");
+                Debug.Log("Base Empty");
             }
         }
         else

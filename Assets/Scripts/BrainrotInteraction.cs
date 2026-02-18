@@ -57,13 +57,16 @@ public class BrainrotInteraction : MonoBehaviour
     private Vector3 startPosition;
     private bool isSinking;
 
-
-
+    private Animator anim;
+    
     //public UnityEvent onPick;
     void Awake()
     {
         originalPosition = transform.position;
         originalRotation = transform.rotation;
+
+        anim = GetComponent<Animator>();
+
     }
 
     void Start()
@@ -105,9 +108,16 @@ public class BrainrotInteraction : MonoBehaviour
 
         sinkTimer -= Time.deltaTime;
 
-        if (sinkTimer <= 0f)
+        if (sinkTimer <= 0f && !isSinking)
         {
             isSinking = true;
+
+            if (anim != null)
+            {
+                int randomIndex = Random.Range(0, 6); // 0 to 5
+                anim.SetInteger("SinkIndex", randomIndex);
+                anim.SetBool("IsSinking", true);
+            }
         }
 
         if (isSinking)
@@ -120,6 +130,9 @@ public class BrainrotInteraction : MonoBehaviour
             {
                 if (destroyOnFullSink)
                 {
+                    if (BrainrotSpawner.Instance != null)
+                        BrainrotSpawner.Instance.OnBrainrotDestroyed();
+
                     Destroy(gameObject);
                 }
                 else
@@ -276,6 +289,13 @@ public class BrainrotInteraction : MonoBehaviour
         isSinking = false;
         sunkAmount = 0f;
 
+        if (anim != null)
+        {
+            anim.SetBool("IsSinking", false);
+            anim.SetInteger("SinkIndex", 0);
+        }
+
+
         //onPick?.Invoke();
 
     }
@@ -378,6 +398,12 @@ public class BrainrotInteraction : MonoBehaviour
         {
             Debug.LogError($"❌ Error adding {brainrotName} to Bag: {ex.Message}");
         }
+
+        if (anim != null)
+        {
+            anim.SetBool("IsSinking", false);
+        }
+
     }
 
     private IEnumerator SmoothDropAndBounce(Vector3 targetPos, Vector3 faceDir)
@@ -513,6 +539,29 @@ public class BrainrotInteraction : MonoBehaviour
         return iconSprite;
 
     }
+
+    public void RandomizeSinkValues()
+    {
+        // 🔹 Very small but random delay
+        sinkDelay = Random.Range(0.2f, 3f);
+
+        // 🔹 Accurate full depth based on height
+        Collider col = GetComponent<Collider>();
+        if (col != null)
+            maxSinkDepth = col.bounds.size.y + Random.Range(0.3f, 0.8f);
+        else
+            maxSinkDepth = 3f;
+
+        // 🔹 Big random time gaps (THIS is the key)
+        float totalSinkTime = Random.Range(8f, 35f);
+
+        // 🔹 Correct speed calculation
+        sinkSpeed = maxSinkDepth / totalSinkTime;
+
+        sinkTimer = sinkDelay;
+    }
+
+
 
 }
 
