@@ -121,7 +121,7 @@ public class AdsManager : MonoBehaviour
 
         PlayerPrefs.SetInt("EnableAds", 0);
 
-        AdsManager.Instance.RemoveAds();
+        //AdsManager.Instance.RemoveAds();
 
 
         googleAdsManager = GoogleAdsManager.Instance;
